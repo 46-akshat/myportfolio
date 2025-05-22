@@ -93,3 +93,37 @@ body{
   transform: scale(1.05);
   box-shadow: 0 0 12px rgba(0,120,215,0,9);
 }
+.context-menu {
+  position: absolute;
+  background-color: #fdfdfd;
+  border: 1px solid #b4b4b4;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+  min-width: 160px;
+  padding: 4px 0;
+  z-index: 1000;
+  user-select: none;
+}
+
+.context-menu .menu-item {
+  padding: 4px 18px;
+  cursor: default;
+  white-space: nowrap;
+  color: #000;
+}
+
+.context-menu .menu-item:hover {
+  background-color: #cce6ff;
+}
+
+.context-menu .menu-item.disabled {
+  color: #999;
+  pointer-events: none;
+}
+
+.context-menu .separator {
+  height: 1px;
+  background-color: #d7d7d7;
+  margin: 4px 0;
+}
